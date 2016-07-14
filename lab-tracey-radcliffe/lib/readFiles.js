@@ -7,8 +7,7 @@ const readFiles = function(files, callback) {
   ee.on('filesRead', function(data){
     if(data) array.unshift(data.toString());
     if(files.length == 0) {
-      callback(array);
-      return;
+      return callback(array);
     }
 
     fs.readFile(files.pop(), function(err, data){
