@@ -28,7 +28,6 @@ describe('read cli', () =>{
   });
 
   it('shopuld read from process.argv', () => {
-    var called = false;
     var testStream = {
       write: function(input){
         expect(input).to.eql(readFile('test'));
