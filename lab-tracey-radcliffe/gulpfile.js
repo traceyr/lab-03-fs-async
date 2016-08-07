@@ -2,7 +2,6 @@ const gulp = require('gulp');
 const mocha = require('gulp-mocha');
 const eslint = require('gulp-eslint');
 
-
 var testFiles = ['test/**/*.js'];
 var allFiles = ['test/**/*.js', 'lib/**/*.js', 'gulpfile.js'];
 
